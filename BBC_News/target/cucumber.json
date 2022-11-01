@@ -1,0 +1,183 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-11-01T22:15:24.582Z",
+        "line": 4,
+        "name": "Verify if a registered user can view and add the comments of a Top News in BBC News web Application",
+        "description": "",
+        "id": "verify-the-viewing-of-comments-in-bbc-news-web-application;verify-if-a-registered-user-can-view-and-add-the-comments-of-a-top-news-in-bbc-news-web-application",
+        "after": [
+          {
+            "result": {
+              "duration": 4737000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.AfterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 28676000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "A User navigates to the BBC News page and sign in using following details",
+            "match": {
+              "location": "stepDefinitions.LandingPageStepDefinition.a_user_navigates_to_the_bbc_news_page_and_sign_in_using_following_details(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "anandu114@gmail.com",
+                  "Anandu@123"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d107.0.5304.87)\nBuild info: version: \u00274.5.3\u0027, revision: \u00274b786a1e430\u0027\nSystem info: os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002713.0\u0027, java.version: \u00271.8.0_333\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [fd100b8daec5fa26da5dc1330d7c19ef, clickElement {id\u003d462d5780-8be5-47bf-a6db-eeaca23cb145}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/sg/29n86s_d6bq...}, goog:chromeOptions: {debuggerAddress: localhost:49163}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:49163/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on MAC (fd100b8daec5fa26da5dc1330d7c19ef)] -\u003e xpath: //span[contains(@class,\u0027comment__icon\u0027)]]\nSession ID: fd100b8daec5fa26da5dc1330d7c19ef\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)\n\tat PageObjects.NewsLandingPage.commentIcon(NewsLandingPage.java:55)\n\tat stepDefinitions.LandingPageStepDefinition.the_user_clicks_on_the_comment_icon_of_a_top_news_in_the_main_page_and_lands_on_the_article_page(LandingPageStepDefinition.java:67)\n\tat ✽.The user clicks on the comment icon of a Top News in the main page and lands on the article page(file:///Users/anandu/eclipse-workspace/BBC_News/src/test/java/features/verifyCommenting.feature:7)\n",
+              "duration": 8490000000,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "The user clicks on the comment icon of a Top News in the main page and lands on the article page",
+            "match": {
+              "location": "stepDefinitions.LandingPageStepDefinition.the_user_clicks_on_the_comment_icon_of_a_top_news_in_the_main_page_and_lands_on_the_article_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "The user scroll down and wait for \"5\" seconds for the comments to display",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinitions.ArticlePageStepDefinition.the_user_scroll_down_and_wait_for_something_seconds_for_the_comments_to_display(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User can join the conversation and add comments to the article",
+            "match": {
+              "location": "stepDefinitions.ArticlePageStepDefinition.user_can_join_the_conversation_and_add_comments_to_the_article()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AutomationTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-01T22:16:06.553Z",
+        "line": 12,
+        "name": "Verify if the User is prompted to sign in to comment on the Top News story in the BBC News Application",
+        "description": "",
+        "id": "verify-the-viewing-of-comments-in-bbc-news-web-application;verify-if-the-user-is-prompted-to-sign-in-to-comment-on-the-top-news-story-in-the-bbc-news-application",
+        "after": [
+          {
+            "result": {
+              "duration": 4610000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.AfterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8227000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "A User navigates to the BBC News page",
+            "match": {
+              "location": "stepDefinitions.LandingPageStepDefinition.a_user_navigates_to_the_bbc_news_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d107.0.5304.87)\nBuild info: version: \u00274.5.3\u0027, revision: \u00274b786a1e430\u0027\nSystem info: os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002713.0\u0027, java.version: \u00271.8.0_333\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [9fe36fc639039b53d7e88a25e57bfd84, clickElement {id\u003d0543464f-a752-4d57-9ce6-a146e2d62395}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/sg/29n86s_d6bq...}, goog:chromeOptions: {debuggerAddress: localhost:49240}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:49240/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on MAC (9fe36fc639039b53d7e88a25e57bfd84)] -\u003e xpath: //span[contains(@class,\u0027comment__icon\u0027)]]\nSession ID: 9fe36fc639039b53d7e88a25e57bfd84\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)\n\tat PageObjects.NewsLandingPage.commentIcon(NewsLandingPage.java:55)\n\tat stepDefinitions.LandingPageStepDefinition.the_user_clicks_on_the_comment_icon_of_a_top_news_in_the_main_page_and_lands_on_the_article_page(LandingPageStepDefinition.java:67)\n\tat ✽.The user clicks on the comment icon of a Top News in the main page and lands on the article page(file:///Users/anandu/eclipse-workspace/BBC_News/src/test/java/features/verifyCommenting.feature:14)\n",
+              "duration": 547000000,
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "The user clicks on the comment icon of a Top News in the main page and lands on the article page",
+            "match": {
+              "location": "stepDefinitions.LandingPageStepDefinition.the_user_clicks_on_the_comment_icon_of_a_top_news_in_the_main_page_and_lands_on_the_article_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "The user scroll down and wait for \"5\" seconds for the comments to display",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinitions.ArticlePageStepDefinition.the_user_scroll_down_and_wait_for_something_seconds_for_the_comments_to_display(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "The user is instructed to Sign in to Comment, reply and react to the article",
+            "match": {
+              "location": "stepDefinitions.ArticlePageStepDefinition.the_user_is_instructed_to_sign_in_to_comment_reply_and_react_to_the_article()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AutomationTest"
+          }
+        ]
+      }
+    ],
+    "name": "Verify the viewing of comments in BBC News Web Application",
+    "description": "",
+    "id": "verify-the-viewing-of-comments-in-bbc-news-web-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/verifyCommenting.feature",
+    "tags": []
+  }
+]
