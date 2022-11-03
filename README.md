@@ -32,4 +32,4 @@ From CLI:
 
 From Eclipse:
 <br/>Right Click /BBC_News/src/test/java/cucumberOptions/testRunner.java -> Run As -> TestNG Test
-![image](https://user-images.githubusercontent.com/64327619/199359942-8d17bb68-585f-4668-a070-5f7e4c47b473.png)
+
