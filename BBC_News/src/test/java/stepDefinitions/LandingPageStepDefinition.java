@@ -3,7 +3,7 @@ package stepDefinitions;
 import java.time.Duration;
 import java.util.List;
 
-
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -64,9 +64,12 @@ TestSetup testSetup;
 	    public void the_user_clicks_on_the_comment_icon_of_a_top_news_in_the_main_page_and_lands_on_the_article_page() throws Throwable {
 		
 		 NewsLandingPage landingpage=new NewsLandingPage(testSetup.driver);
-		 landingpage.commentIcon();
+		 ((JavascriptExecutor) testSetup.driver).executeScript("arguments[0].scrollIntoView(true);", landingpage.commentIcon());
+		 landingpage.commentIcon().click();;
 		 
 	    }
+	 
+	 
 			
 	}
 

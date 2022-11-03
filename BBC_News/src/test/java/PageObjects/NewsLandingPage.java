@@ -49,10 +49,10 @@ public void submit() {
 	driver.findElement(submit).click();
 }
 
-public void commentIcon() {
+public WebElement commentIcon() {
 	
 	
-	driver.findElement(commentIcon).click();
+	return driver.findElement(commentIcon);
 }
 
 
