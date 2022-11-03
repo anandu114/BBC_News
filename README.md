@@ -2,7 +2,7 @@
 This contains the Testing framework for automating BBC News Web Application(https://www.bbc.co.uk/news) to verify the commenting functionality
 # Getting Started
 Use Eclipse IDE to clone and import this project using the below code respository
-https://github.com/anandu114/BBCNEWS_Assignment.git
+https://github.com/anandu114/BBC_News.git
 
 The Scope of this Assignment involves testing the BBC News web application to verify the commenting feature of the Top News displayed in BBC News page
 
@@ -15,9 +15,9 @@ The Scope of this Assignment involves testing the BBC News web application to ve
 # Prerequisites to run the testing Framework
 Eclipse IDE and Java 1.8 
 
-# Instalation and settingup project
+# Installation and settingup project
 Open Eclipse IDE
-<br/>Import by cloning remote project from the repository : https://github.com/anandu114/BBCNEWS_Assignment.git
+<br/>Import by cloning remote project from the repository : https://github.com/anandu114/BBC_News.git
 <br/>Right click Project -> Maven -> Update Project
 <br/>Right click Project -> Run As -> Maven clean
 <br/>Right click Project -> Run As -> Maven test
@@ -32,4 +32,4 @@ From CLI:
 
 From Eclipse:
 <br/>Right Click /BBC_News/src/test/java/cucumberOptions/testRunner.java -> Run As -> TestNG Test
-![image](https://user-images.githubusercontent.com/64327619/199359942-8d17bb68-585f-4668-a070-5f7e4c47b473.png)
+
