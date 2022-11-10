@@ -24,7 +24,7 @@
   <br/>Right click Project -> Run As -> Maven test
   <br/>Test Execution reports can be found in Project->target->cucumber-reports
 
-  ##Running the tests
+  ## Running the tests
 
     Method 1:
 
